@@ -1,7 +1,11 @@
 pages:
+  stage: deploy
   script:
     - mkdir .public
     - cp -r * .public
     - mv .public public
-  rules:
-    - if: '$CI_COMMIT_BRANCH == "master"'
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
