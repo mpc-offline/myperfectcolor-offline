@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex,nofollow">
+    <title>MyPerfectColor - Technical Difficulties</title>
+    <style>
+        :root {
+            --mpc-orange: #f49829;
+            --mpc-ink: #253746;
+            --mpc-ink-soft: #5f7080;
+            --mpc-paper: #fffaf5;
+            --mpc-white: #ffffff;
+            --mpc-border: rgba(37, 55, 70, 0.16);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            min-height: 100%;
+            font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+            color: var(--mpc-ink);
+            background: linear-gradient(180deg, #fffaf5 0%, #f4f7f9 100%);
+        }
+
+        body {
+            min-height: 100vh;
+            margin: 0;
+            display: grid;
+            place-items: center;
+            padding: 24px;
+        }
+
+        main {
+            width: min(100%, 760px);
+            border: 1px solid var(--mpc-border);
+            background: var(--mpc-white);
+            box-shadow: 0 24px 70px rgba(37, 55, 70, 0.16);
+        }
+
+        .bar {
+            height: 8px;
+            background: var(--mpc-orange);
+        }
+
+        .content {
+            padding: 42px;
+        }
+
+        .kicker {
+            margin: 0 0 14px;
+            color: var(--mpc-orange);
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            margin: 0 0 16px;
+            font-size: clamp(32px, 6vw, 52px);
+            line-height: 1.05;
+        }
+
+        p {
+            margin: 0 0 18px;
+            color: var(--mpc-ink-soft);
+            font-size: 17px;
+            line-height: 1.65;
+        }
+
+        a {
+            color: var(--mpc-ink);
+            font-weight: 700;
+        }
+
+        .cloudflare-error-box {
+            margin-top: 24px;
+            padding-top: 18px;
+            border-top: 1px solid var(--mpc-border);
+            color: var(--mpc-ink-soft);
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 560px) {
+            .content {
+                padding: 30px 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="bar"></div>
+        <div class="content">
+            <p class="kicker">Technical issues</p>
+            <h1>Our site is currently experiencing technical difficulties.</h1>
+            <p>We apologize for the inconvenience. Our team is working on restoring service as quickly as possible. Please try refreshing the page in a few minutes.</p>
+            <p>To complete your purchase, please contact us by e-mail at <a href="mailto:support@myperfectcolor.com">support@myperfectcolor.com</a> or call <a href="tel:19738632639">1-973-863-2639</a>.</p>
+            <div class="cloudflare-error-box">
+                ::CLOUDFLARE_ERROR_500S_BOX::
+            </div>
+        </div>
+    </main>
+</body>
+</html>
